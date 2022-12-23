@@ -7,6 +7,9 @@ on:
     paths-ignore:
       - '*.md'
 
+permissions:
+  pull-requests: write
+
 jobs:
   build:
     uses: ./.github/workflows/build.yaml

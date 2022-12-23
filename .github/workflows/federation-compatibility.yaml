@@ -10,8 +10,6 @@ jobs:
     defaults:
       run:
         working-directory: compatibility
-    permissions:
-      pull-requests: write
 
     steps:
       - uses: actions/checkout@v3
