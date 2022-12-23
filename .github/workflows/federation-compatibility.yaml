@@ -33,3 +33,4 @@ jobs:
           compose: 'compatibility/docker-compose.yaml'
           schema: 'compatibility/src/main/resources/graphql/schema.graphqls'
           debug: true
+          token: ${{ secrets.GITHUB_TOKEN }}
