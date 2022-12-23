@@ -3,9 +3,6 @@ name: Federation Compatibility
 on:
   workflow_call:
 
-permissions:
-  pull-requests: write
-
 jobs:
   compatibility:
     timeout-minutes: 30
@@ -13,6 +10,8 @@ jobs:
     defaults:
       run:
         working-directory: compatibility
+    permissions:
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@v3
